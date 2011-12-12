@@ -13,9 +13,10 @@
   <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.14/themes/smoothness/jquery-ui.css" />
 
   <style type="text/css">
-	body { background: #fff; color: #333; font-family: helvetica, arial, sans-serif; margin: 30px; font-size: 15px; }
+	body { background: #fff; color: #333; font-family: helvetica, arial, sans-serif; margin: 30px; font-size: 15px; line-height: 145%; }
 	h1, h2, h3 { color: #000; }
 	h2, h3 { margin: 30px 0 10px 0; }
+	h2:first-child, h3:first-child { margin-top: 0; }
 	p, .p { margin: 10px 0 20px 0; }
 	input.time, input.date { font-size: 13px; }
 	input.time { width: 80px; }
@@ -85,7 +86,10 @@
 		<h3>Duration Example</h3>
 		<p><input id="durationExample" type="text" class="time" /></p>
 
-		<pre class="code">$('#durationExample').timepicker({ 'minTime': '2:00pm', 'showDuration': true });</pre>
+		<pre class="code">$('#durationExample').timepicker({
+	'minTime': '2:00pm',
+	'showDuration': true
+});</pre>
 	</div>
 
 	<div class="example">
@@ -195,6 +199,16 @@ $('#stepExample2').timepicker({ 'step': 60 });</pre>
 		</p>
 
 		<p>Datepair source available <a href="http://jonthornton.github.com/jquery-timepicker/datepair.js">here</a>.</p>
+	</div>
+
+	<div class="example" style="background: #ffd;">
+		<h2>Want to get paid to work on stuff like this?</h2>
+
+		<p>Shameless plug: <a href="http://www.parkwhiz.com">ParkWhiz</a> is looking for talented
+			<a href="http://www.parkwhiz.com/about/jobs/designer/">designers</a>
+			and <a href="http://www.parkwhiz.com/about/jobs/developer/">developers</a> to help us drag the parking industry
+			out of the Stone Age. Visit ParkWhiz's <a href="http://www.parkwhiz.com/about/jobs/">jobs page</a> or email
+			<a href="mailto:jobs@parkwhiz.com">jobs@parkwhiz.com</a> and introduce yourself!</p>
 	</div>
 
 	<h2>Contact</h2>
